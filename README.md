@@ -1,40 +1,145 @@
-# Welcome to Remix!
+# 积分学习助手 (Integration Learning Assistant)
 
-- 📖 [Remix docs](https://remix.run/docs)
+[English](./README_EN.md) | 中文
 
-## Development
+一个基于 Remix 的交互式积分学习应用，通过可视化和练习帮助学生更好地理解和掌握积分概念。
 
-Run the dev server:
+## 🌟 主要功能
 
-```shellscript
-npm run dev
+### 📚 交互式积分练习
+- **多种函数类型**：支持幂函数、三角函数、指数函数、对数函数等
+- **智能答案判断**：自动检验答案正确性，支持多种表达式格式
+- **详细解题步骤**：提供完整的解题过程和积分方法说明
+- **难度自适应**：三个难度级别（简单、中等、困难）
+- **实时反馈**：即时显示答案正确性和学习建议
+
+### 📊 定积分可视化计算
+- **函数图像绘制**：动态生成函数图像
+- **积分区域高亮**：直观显示积分的几何意义
+- **黎曼和演示**：通过矩形逼近理解积分概念
+- **精确数值计算**：使用梯形法则进行高精度积分计算
+- **交互式图表**：支持缩放、平移等操作
+
+## 🛠 技术栈
+
+- **前端框架**: Remix (React)
+- **样式**: Tailwind CSS + 自定义 CSS
+- **数学计算**: Math.js
+- **数学公式渲染**: KaTeX
+- **数据可视化**: Plotly.js
+- **构建工具**: Vite
+- **类型检查**: TypeScript
+
+## 📁 项目结构
+
+```
+app/
+├── components/
+│   └── ClientOnlyPlot.tsx         # 客户端图表组件
+├── routes/
+│   ├── _index.tsx                 # 首页 - 功能介绍和导航
+│   ├── practice.tsx               # 积分练习页面
+│   └── visualize.tsx              # 定积分可视化页面
+├── entry.client.tsx               # 客户端入口
+├── entry.server.tsx               # 服务端入口
+├── root.tsx                       # 根组件 - HTML结构和样式
+└── tailwind.css                   # 自定义样式和主题
 ```
 
-## Deployment
+## 🚀 快速开始
 
-First, build your app for production:
+### 环境要求
+- Node.js >= 20.0.0
 
-```sh
+### 安装依赖
+```bash
+npm install
+```
+
+### 开发模式
+```bash
+npm run dev
+```
+应用将在 `http://localhost:5173` 启动
+
+### 构建生产版本
+```bash
 npm run build
 ```
 
-Then run the app in production mode:
-
-```sh
+### 运行生产版本
+```bash
 npm start
 ```
 
-Now you'll need to pick a host to deploy it to.
+## 🎯 使用指南
 
-### DIY
+### 初学者建议
+1. **先学习基本积分公式** - 熟悉常见函数的积分
+2. **通过可视化理解积分概念** - 使用定积分可视化工具建立几何直观
+3. **逐步练习各种题型** - 从简单题目开始，循序渐进
 
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
+### 进阶学习
+1. **掌握换元积分法** - 处理复杂函数积分
+2. **学习分部积分法** - 解决乘积形式的积分
+3. **练习复杂函数积分** - 挑战高难度题目
 
-Make sure to deploy the output of `npm run build`
+## 🎨 界面特色
 
-- `build/server`
-- `build/client`
+- **现代化设计**：采用毛玻璃效果、渐变色彩和流畅动画
+- **深色模式支持**：自动适配系统主题
+- **响应式布局**：完美适配各种屏幕尺寸
+- **交互式体验**：丰富的悬停效果和过渡动画
 
-## Styling
+## 📊 功能详情
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
+### 积分练习模块
+- 随机生成各类积分题目
+- 支持不同函数类型：多项式、三角函数、指数函数、对数函数
+- 三个难度级别，适合不同学习阶段
+- 实时答案验证和详细解题步骤
+- 学习进度跟踪和正确率统计
+
+### 可视化计算模块
+- 输入任意数学函数表达式
+- 自定义积分上下限
+- 实时图像渲染和积分区域标记
+- 黎曼和动画演示，可调节矩形数量
+- 高精度数值积分计算
+- 预设示例函数快速体验
+
+## 🔧 开发相关
+
+### 代码检查
+```bash
+npm run lint
+```
+
+### 类型检查
+```bash
+npm run typecheck
+```
+
+### 主要依赖
+- `@remix-run/react`: Web 框架
+- `mathjs`: 数学表达式解析和计算
+- `plotly.js`: 数据可视化
+- `katex`: 数学公式渲染
+- `tailwindcss`: CSS 框架
+
+## 🎓 教育价值
+
+这个应用旨在通过以下方式提升积分学习体验：
+
+1. **可视化理解**：将抽象的数学概念转化为直观的图形
+2. **即时反馈**：帮助学生及时发现和纠正错误
+3. **自主学习**：提供丰富的练习题目和详细解答
+4. **循序渐进**：从基础到进阶的完整学习路径
+
+## 📝 许可证
+
+私有项目，仅供学习和教育使用。
+
+## 🤝 贡献
+
+欢迎提出建议和改进意见，让这个积分学习工具更加完善！
