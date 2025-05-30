@@ -1,0 +1,15 @@
+{
+  "buildCommand": "npm run build",
+  "framework": "remix",
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ],
+  "functions": {
+    "app/routes/**/*.tsx": {
+      "runtime": "nodejs20.x"
+    }
+  }
+}
