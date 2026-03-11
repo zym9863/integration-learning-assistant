@@ -11,10 +11,10 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@remix-run/dev": "^2.16.8",
-    "@remix-run/node": "^2.16.8",
+    "@remix-run/dev": "^2.17.4",
+    "@remix-run/node": "^2.17.4",
     "@remix-run/react": "^2.16.8",
-    "@remix-run/serve": "^2.16.8",
+    "@remix-run/serve": "^2.17.4",
     "@types/plotly.js": "^3.0.0",
     "isbot": "^4.1.0",
     "katex": "^0.16.22",
@@ -24,7 +24,7 @@
     "react-dom": "^18.2.0",
     "react-katex": "^3.1.0",
     "react-plotly.js": "^2.6.0",
-    "vite": "^6.0.0",
+    "vite": "^6.4.1",
     "vite-tsconfig-paths": "^4.2.1"
   },
   "devDependencies": {
